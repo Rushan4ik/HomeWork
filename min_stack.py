@@ -15,8 +15,8 @@ class Stack:
 		self.minimum.pop()
 		return self.items.pop()
 	def top(self):
-		print(self.items[-1])
+		return self.items[-1]
 	def get_min(self):
 		if not self.minimum:
 			raise IndexError("stack empty")
-		print(self.minimum[-1])
+		return self.minimum[-1]
